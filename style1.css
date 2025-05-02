@@ -1,0 +1,146 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(135deg, #1f1f1f, #333);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #ff69b4;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+/* Section Styling */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 0.3rem;
+  color: #ff69b4;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Columns */
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column div {
+  flex: 1;
+  min-width: 250px;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.column div:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h4 {
+  color: #ff9ed6;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional Dark Pink Theme */
+body.pink-theme {
+  background-color: #2b001a;
+  color: #ffe6f0;
+}
+
+body.pink-theme header {
+  background: linear-gradient(135deg, #440021, #99004d);
+}
+
+body.pink-theme .section-title,
+body.pink-theme h4,
+body.pink-theme a {
+  color: #ff9ed6;
+}
+
+body.pink-theme .column div {
+  background-color: #3b0025;
+  box-shadow: 0 4px 8px rgba(255, 158, 214, 0.3);
+}
+
+body.pink-theme a:hover {
+  color: #fff;
+}
+
